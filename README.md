@@ -43,6 +43,16 @@ For simplicity I run the following command on ubuntu
 - 0 5 * * * php -f /usaWeatherPermafeed/owmCityForecasts.php >> /usaWeatherPermafeed/forecast.log
 - save crontab
 
+**Add your Openweathermap API Key**
+- edit the file owmCityCurrent.php and on line 40 enter your API key
+- edit the file owmCityForecasts.php and on line 42 enter your API Key
+
+**Copy your wallet file**
+- cd /usaWeatherPermafeed
+- nano jwk.json
+- paste the contents of your wallet file
+- cntl + x to save then exit
+
 **Thats all the bot is installed and scheduled**
 
 # Use
