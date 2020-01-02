@@ -2,11 +2,15 @@
 
 
 ### What does this do?
-This bot will retrieve current weather and weather forecast data then save that data to Arweave.
-This bot uses a list of the top 1000 US cities by population and the openweatherMap API to get weather data.
+This bot will retrieve current weather data and weather forecast data. Right now the bot is using a list of 1000 largest USA cities and the openweatherMap API to gather this data. Once the weather data has been retrieve we then save that data to Arweave.
+
+### How frequently does this gather data.
+Due to limitations inposed by our API provider this is all we are able to do using a free API service.
 Current weather is retrieved every 2 hours. 
 Forecast data is retrieved 1 time per day.
 
+### Where will the data be saved?
+https://viewblock.io/arweave/address/NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4
 
 ### How was the API service chosen?
 I evaluated 5 different weather api services for potential usefulness. 
@@ -18,12 +22,11 @@ All data sources offer mostly the same data and openweathermap is generous with 
 There are over 100000 cities in the world. The API provider only allows 1 API request per second. I think there are only 86400 seconds in 1 day. Plus it is a lot of data.
 
 ## Requirements
-1 Linux Host
+- 1 Linux Host
 
-git
+For simplicity I run the following command on ubuntu
+- sudo apt install git php php-common php-curl php-gmp php-mbstring php-mysql php-pear php-php-gettext php-phpseclib php-xml php7.2 php7.2-cli php7.2-common php7.2-curl php7.2-gmp php7.2-json php7.2-mbstring php7.2-mysql php7.2-opcache php7.2-readline php7.2-xml php7.2-zip
 
-The following php packages if you use ubuntu the equivilant if not.
-- php,php-common,php-curl,php-gmp,php-mbstring,php-mysql,php-pear,php-php-gettext,php-phpseclib,php-xml,php7.2,php7.2-cli,php7.2-common,php7.2-curl,php7.2-gmp,php7.2-json,php7.2-mbstring,php7.2-mysql,php7.2-opcache,php7.2-readline,php7.2-xml,php7.2-zip
 
 ## Install
 **Feel free to do this section your own way I only do it this way to prevent permissions issues and to make it easier**
