@@ -26,7 +26,7 @@ The following php packages if you use ubuntu the equivilant if not.
 - php,php-common,php-curl,php-gmp,php-mbstring,php-mysql,php-pear,php-php-gettext,php-phpseclib,php-xml,php7.2,php7.2-cli,php7.2-common,php7.2-curl,php7.2-gmp,php7.2-json,php7.2-mbstring,php7.2-mysql,php7.2-opcache,php7.2-readline,php7.2-xml,php7.2-zip
 
 ## Install
-**change to the root directory of your host**
+**Feel free to do this section your own way I only do it this way to prevent permissions issues and to make it easier**
 - cd /
 
 **clone this repository**
@@ -36,7 +36,7 @@ The following php packages if you use ubuntu the equivilant if not.
 - crontab -e
 
 **add the following lines**
-- 0 */2 * * * php -f /usaWeatherFeed/openweathermapFunctions.php >> /usaWeatherFeed/current.log
+- 0 */2 * * * php -f /usaWeatherFeed/owmCityWeather.php >> /usaWeatherFeed/current.log
 - 0 5 * * * php -f /usaWeatherFeed/owmCityForecasts.php >> /usaWeatherFeed/forecast.log
 - save crontab
 
