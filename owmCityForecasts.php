@@ -31,7 +31,7 @@
    * Go through list of cities and contact api for each city forecast data
    * api.openweathermap.org/data/2.5/forecast?lat=35&lon=139
    */
-   $cities_file = file_get_contents('/usaWeatherFeed/cities.json');
+   $cities_file = file_get_contents('/usaWeatherPermafeed/cities.json');
    $cities = json_decode($cities_file, true);
    foreach ($cities as $city)
    {
@@ -85,7 +85,7 @@
         * 
         */
        $arweave = new \Arweave\SDK\Arweave('https', 'arweave.net', '443');
-       $jwk = json_decode(file_get_contents('/usaWeatherFeed/jwk.json'), true);
+       $jwk = json_decode(file_get_contents('/usaWeatherPermafeed/jwk.json'), true);
        $wallet = new \Arweave\SDK\Support\Wallet($jwk);
 
        $transaction = $arweave->createTransaction($wallet, [
@@ -100,7 +100,7 @@
                        ]
                    ]);
 
-       $logFile = "/usaWeatherFeed/weather-forecast-txs.log";
+       $logFile = "/usaWeatherPermafeed/weather-forecast-txs.log";
        $transactionId = $transaction->getAttribute('id');
 
        file_put_contents($logFile, PHP_EOL . $transactionId, FILE_APPEND);

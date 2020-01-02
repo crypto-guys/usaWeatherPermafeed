@@ -29,7 +29,7 @@
   * Go through list of cities and contact api for each city data
   *
   */
-  $cities_file = file_get_contents('/usaWeatherFeed/cities.json');
+  $cities_file = file_get_contents('/usaWeatherPermafeed/cities.json');
   $cities = json_decode($cities_file, true);
   foreach ($cities as $city)
     {
@@ -79,7 +79,7 @@
        *
        */
       $arweave = new \Arweave\SDK\Arweave('https', 'arweave.net', '443');
-      $jwk = json_decode(file_get_contents('/usaWeatherFeed/jwk.json'), true);
+      $jwk = json_decode(file_get_contents('/usaWeatherPermafeed/jwk.json'), true);
       $wallet = new \Arweave\SDK\Support\Wallet($jwk);
       $transaction = $arweave->createTransaction($wallet, [
                       'data' => $response,
@@ -93,7 +93,7 @@
                           'Weather:'      => $conditions,
                       ]
                   ]);
-      $logFile = "/usaWeatherFeed/current-weather-txs.log";
+      $logFile = "/usaWeatherPermafeed/current-weather-txs.log";
       $transactionId = $transaction->getAttribute('id');
       file_put_contents($logFile, PHP_EOL . $transactionId, FILE_APPEND);
       $arweave->api()->commit($transaction);
