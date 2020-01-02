@@ -82,13 +82,13 @@ All time is Coordinated Universal Time (UTC)
 **These are examples only and do not contain all possible options. Examples should give the user enough information to create queries for the required data**
 **ALL WEATHER DATA IS JSON FORMAT**
 
-##### Retrieve All Data ever saved by the USAWeatherFeed
+##### Retrieve All Data ever saved by the USAWeatherPermafeed
     {
       op: 'and',
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -103,7 +103,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -123,7 +123,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -144,7 +144,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -169,7 +169,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -200,7 +200,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -226,7 +226,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -257,7 +257,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
@@ -293,7 +293,7 @@ All time is Coordinated Universal Time (UTC)
       expr1: {
         op: 'equals',
         expr1: 'from',
-        expr2: 'kgMcQtTK4ZrNNg06eUltX60NRsUK8S_VTffoxU2Mn5Y'
+        expr2: 'NyUQC0iCU8UyHZRf18-UE0x2pOhVSvF2vYcq6TS2IN4'
      },
       expr2: {
         op: 'equals',
