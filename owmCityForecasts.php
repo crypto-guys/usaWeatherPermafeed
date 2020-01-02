@@ -1,9 +1,9 @@
 <?php
 /**
- * usaWeatherFeed archives both Current and Forecast weather data
+ * usaWeatherPermafeed archives both Current and Forecast weather data
  *
  * @category
- * @package  usaWeatherFeed
+ * @package  usaWeatherPermafeed
  * @author   cryptoguys
  * @license  MIT
  * @link
@@ -39,7 +39,7 @@
        $long = $city['longitude'];
        $name = $city['city'];
        $state = $city['state'];
-       $url = "https://api.openweathermap.org/data/2.5/forecast?lat=$lat&lon=$long&appid=bd7e8f874e9947b4c668726bf1e488af";
+       $url = "https://api.openweathermap.org/data/2.5/forecast?lat=$lat&lon=$long&appid=API KEY GOES HERE";
        // echo $url;
        /**
         * Use Curl to retrieve data from API source.
