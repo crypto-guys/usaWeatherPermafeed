@@ -1,4 +1,4 @@
-# usaWeatherFeed
+# usaWeatherPermaFeed
 
 
 ### What does this do?
@@ -33,14 +33,14 @@ For simplicity I run the following command on ubuntu
 - cd /
 
 **clone this repository**
-- git clone https://github.com/crypto-guys/usaWeatherFeed.git
+- git clone https://github.com/crypto-guys/usaWeatherPermafeed.git
 
 **edit crontab**
 - crontab -e
 
 **add the following lines**
-- 0 */2 * * * php -f /usaWeatherFeed/owmCityWeather.php >> /usaWeatherFeed/current.log
-- 0 5 * * * php -f /usaWeatherFeed/owmCityForecasts.php >> /usaWeatherFeed/forecast.log
+- 0 */2 * * * php -f /usaWeatherPermafeed/owmCityWeather.php >> /usaWeatherPermafeed/current.log
+- 0 5 * * * php -f /usaWeatherPermafeed/owmCityForecasts.php >> /usaWeatherPermafeed/forecast.log
 - save crontab
 
 **Thats all the bot is installed and scheduled**
@@ -93,7 +93,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      }
     }
 
@@ -108,7 +108,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
@@ -128,7 +128,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
@@ -149,7 +149,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
@@ -174,7 +174,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
@@ -205,7 +205,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
@@ -231,7 +231,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
@@ -262,7 +262,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
@@ -298,7 +298,7 @@ All time is Coordinated Universal Time (UTC)
       expr2: {
         op: 'equals',
         expr1: 'Feed-Name:',
-        expr2: 'usaWeatherFeed'
+        expr2: 'usaWeatherPermafeed'
      },
       expr3: {
         op: 'equals',
