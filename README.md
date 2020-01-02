@@ -61,13 +61,13 @@ The following php packages if you use ubuntu the equivilant if not.
 
 All time is Coordinated Universal Time (UTC) 
 
-Forecast Data
+**Forecast Data**
 - value = Month-Day-Year
 - only the Date is used / needed
 - Forecast data is retrieved daily
 - example = 12-27-2019
 
-Current Data
+**Current Data**
 - value = Month-Day-Year Hour:00
 - use = search for data by time
 - current data is retrieved every 2 hours
