@@ -37,7 +37,7 @@
       $long = $city['longitude'];
       $name = $city['city'];
       $state = $city['state'];
-      $url = "https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$long&appid=bd7e8f874e9947b4c668726bf1e488af";
+      $url = "https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$long&appid=APIKEY GOES HERE";
       /**
        * Use Curl to retrieve data from API source.
        */
