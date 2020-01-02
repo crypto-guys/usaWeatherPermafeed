@@ -1,9 +1,9 @@
 <?php
 /**
- * usaWeatherFeed archives Current and Forecast weather data
+ * usaWeatherPermafeed archives Current and Forecast weather data
  *
  * @category
- * @package  usaWeatherFeed
+ * @package  usaWeatherPermafeed
  * @author   cryptoguys
  * @license  MIT
  * @link
